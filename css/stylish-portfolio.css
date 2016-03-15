@@ -188,6 +188,7 @@ hr.small {
     width: 250px;
     margin-left: auto;
     margin-right: auto;
+    display:inline-block;
 }
 
 /* Callout */
@@ -209,12 +210,21 @@ hr.small {
     margin-bottom: 30px;
 }
 
+.portfolio-item p {
+    text-align: justify;
+}
+
 .img-portfolio {
     margin: 0 auto;
 }
 
 .img-portfolio:hover {
     opacity: 0.8;
+}
+
+.pagination li {
+    display:inline-block;
+    padding:5px;
 }
 
 /* Skills */

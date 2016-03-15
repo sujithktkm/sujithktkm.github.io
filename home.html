@@ -12,7 +12,12 @@
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+          rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="http://listjs.com/no-cdn/list.js"></script>
+    <script src="http://listjs.com/no-cdn/list.pagination.js"></script>
+    <script src="js/projects.js" type="application/javascript"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -93,7 +98,7 @@
                         <div class="service-item">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                <i class="fa fa-calendar-o fa-stack-1x text-primary"></i>
                             </span>
                             <h4>
                                 <strong>Clari</strong>
@@ -106,7 +111,7 @@
                         <div class="service-item">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                <i class="fa fa-bank fa-stack-1x text-primary"></i>
                             </span>
                             <h4>
                                 <strong>S &amp; P Capital IQ</strong>
@@ -119,7 +124,7 @@
                         <div class="service-item">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                <i class="fa fa-group fa-stack-1x text-primary"></i>
                             </span>
                             <h4>
                                 <strong>MARCNS (startup)</strong>
@@ -148,32 +153,32 @@
                 <h2>Education</h2>
                 <hr class="small">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="education-item">
+                    <!--<div class="col-md-3 col-sm-6">-->
+                    <div class="education-item">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
                             </span>
-                            <h4>
-                                <strong>North Carolina State University</strong>
-                            </h4>
-                            <p>Masters in Computer Science</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
-                        </div>
+                        <h4>
+                            <strong>North Carolina State University</strong>
+                        </h4>
+                        <p>Masters in Computer Science</p>
+                        <a href="#" class="btn btn-light">Learn More</a>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="education-item">
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-6">-->
+                    <div class="education-item">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                <i class="fa fa-university fa-stack-1x text-primary"></i>
                             </span>
-                            <h4>
-                                <strong>Osmania University</strong>
-                            </h4>
-                            <p>Bachelors in Computer Science</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
-                        </div>
+                        <h4>
+                            <strong>Osmania University</strong>
+                        </h4>
+                        <p>Bachelors in Computer Science</p>
+                        <a href="#" class="btn btn-light">Learn More</a>
                     </div>
+                    <!--</div>-->
                 </div>
                 <!-- /.row (nested) -->
             </div>
@@ -189,41 +194,173 @@
 <section id="portfolio" class="portfolio">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
+            <div class="col-lg-offset-1 text-center">
+                <!--col-lg-10-->
                 <h2>Projects</h2>
                 <hr class="small">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="portfolio-item">
-                            <a href="#">
-                                <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="portfolio-item">
-                            <a href="#">
-                                <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="portfolio-item">
-                            <a href="#">
-                                <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="portfolio-item">
-                            <a href="#">
-                                <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                            </a>
-                        </div>
+                    <div id="test-list">
+                        <ol class="list" style="list-style-type: none">
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>1. Framework to test Performance of SQL Objects</h3>
+                                        <p>Developed a tool which can evaluate the performance of SQL objects at both
+                                            object level and query level. Designed a decent UI and graphical
+                                            representations to display the statistics, queries, execution plans. Also
+                                            determined the threshold of an object in multi-threaded programming by
+                                            virtual load generation.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>2. Test Harness to Validate Web Services</h3>
+                                        <p>Implemented a test harness framework that enables the retrieval of the web
+                                            service inner methods and allows the scheduling of periodic tests to monitor
+                                            the health of web services. Logged all the saved schedules and test results
+                                            to identify critical areas and proactively act before the downtime impact of
+                                            the web service is felt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>3. Web-based tool for accelerated learning and evaluation</h3>
+                                        <p>Designed a website with a sophisticated back-end database which is a point of
+                                            communication for students and respective professors to carry course related
+                                            work, post homework, grades and announcements.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>4. Stage Pipeline, DevOps</h3>
+                                        <p>Implemented build pipeline using Jenkins, added Git hook considering load
+                                            balancing to make sure the requests are distributed among all the servers
+                                            efficiently. In test pipeline we improved code coverage, identified which
+                                            branches are covered and also obtained bug reports. In the deployment
+                                            pipeline, we used ansible and vagrant to deploy an application on real
+                                            remote machine (AWS ec2 instances), performed canary release and performed
+                                            monitoring of application after canary release. In the final pipeline we
+                                            performed resilience testing using our own versions of Chaos Monkey and
+                                            Doctor Monkey.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>5. Point of Sales System</h3>
+                                        <p>Programmed an interactive system which uses monitor to add or delete
+                                            purchases, a bar code scanner to detect the product, its quantity, price and
+                                            benefits, if any and a receipt generator that summarize the purchases.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>6. Online Tour Guide</h3>
+                                        <p>This project helps the tour planners to ease their work. They can work online
+                                            and using their own website allow people to check all different packages
+                                            they provide and also it helps the users to check the tour plan and have a
+                                            look at all the places they might visit in the tour. It also involves
+                                            registrations which help them get some possible deals.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>7. SimpleDB</h3>
+                                        <p>Developed a clock replacement policy in buffer management. Reduced time taken
+                                            to find a buffer for replacement using hash maps. Stabilized the data
+                                            storage against system crashes and power losses.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>8. Study of User Migration and analysis of response time on Stack Overflow
+                                            data set</h3>
+                                        <p>Analyzed migration of developers in iOS and Android over the past 6 years
+                                            based on questions and answers posted on Stack Overflow. Evaluated the
+                                            effect on response time based on various factors related to
+                                            <strong>tags</strong> on the question.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>9. Secure Email System</h3>
+                                        <p>Implemented a secure email system that can send an encrypted email and
+                                            decrypt any valid secure email received, using both symmetric-key and
+                                            public-key cryptography techniques. Used a Network Security concept called
+                                            Certification Authorities to validate receiver's certificate (while sending
+                                            email) and sender's certificate (while receiving email) and a local
+                                            database-utility to track certificates of all users in the system.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>10. Technical Security Review of OpenMRS</h3>
+                                        <p>Performed a security review of an open-source, electronic health care system
+                                            called OpenMRS to identify security flaws in the system. To achieve this,
+                                            OpenMRS was tested against various vulnerabilities listed in OWASP Top 10
+                                            and SANS 25. We also performed a static analysis of source code and threat
+                                            modeling for certain workflows in OpenMRS. To finish the review, we analyzed
+                                            usability of OpenMRS against Jakob Nielson’s usability heuristics and
+                                            documented the steps required to mitigate discovered threats.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>11. Data deduplication across Distributed Storage</h3>
+                                        <p>Implemented deduplication for efficient data storage. Used distributed
+                                            storage to store data between more than one nodes to improve read speeds,
+                                            upto 4X.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name col-md-6">
+                                    <div class="portfolio-item">
+                                        <h3>12. Cryptographic analysis and Implementation of Statistical Key Recovery
+                                            Attack on WEP</h3>
+                                        <p>Analyzed various ways possible to crack WEP and implemented a statistical
+                                            attack (FMS attack) to recover the "key" from a log of WEP packets. Also
+                                            presented a research paper, which explains different vulnerabilities in WEP
+                                            protocol and ways to improve the same. However, few of these vulnerabilities
+                                            were addressed in later standards such as WPA and WPA2.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                        <ul class="pagination"></ul>
                     </div>
                 </div>
                 <!-- /.row (nested) -->
-                <a href="#" class="btn btn-dark">View More Items</a>
+                <!-- Smaller pagination -->
+                <!--<div id="content1">Dynamic Content goes here</div>-->
+                <!--<ul id="pagination" class="pagination">-->
+                <!--<li class="disabled"><span>&laquo;</span></li>-->
+                <!--<li class="active"><span>1</span></li>-->
+                <!--<li><a href="#">2</a></li>-->
+                <!--<li><a href="#">3</a></li>-->
+                <!--<li><a href="#">4</a></li>-->
+                <!--<li><a href="#">5</a></li>-->
+                <!--<li><a href="#">&raquo;</a></li>-->
+                <!--</ul>-->
             </div>
             <!-- /.col-lg-10 -->
         </div>
@@ -247,7 +384,7 @@
                 <div class="skills">
                     <div class="skills-wrap">
                         <h3>Programming Languages</h3>
-                        <p>Java, C, C++, Python, Ruby, Shell Scripting, Google Apps Script, REST API</p>
+                        <p>Java, C, C++, Python, Shell Scripting, Google Apps Script, REST API, Ruby, Ruby on Rails</p>
                     </div>
                 </div>
             </div>
@@ -280,7 +417,7 @@
                     <div class="skills-wrap">
                         <h3>Tools</h3>
                         <p>Eclipse, Intellij IDEA, PyCharm, RubyMine, WebStorm, MS Office, Vagrant, Jenkins, Swagger,
-                            Heroku, Slack, Hubot, Jetty Server</p>
+                            Heroku, Slack, Hubot, Jetty Server, Alert Logic, Azure, Nexpose, CloudPassage</p>
                     </div>
                 </div>
             </div>
@@ -312,7 +449,9 @@
                 <div class="skills">
                     <div class="skills-wrap">
                         <h3>Python</h3>
-                        <p>Honor code certificate from MITx for completion of <a href="documents/MITx 6.00-python-edx.pdf" target="_blank">MITx 6.00.1x: Introduction to Computer Science and Programming Using Python</a></p>
+                        <p>Honor code certificate from MITx for completion of <a
+                                href="documents/MITx 6.00-python-edx.pdf" target="_blank">MITx 6.00.1x: Introduction to
+                            Computer Science and Programming Using Python</a></p>
                     </div>
                 </div>
             </div>
@@ -320,7 +459,8 @@
                 <div class="skills">
                     <div class="skills-wrap">
                         <h3>MongoDB</h3>
-                        <p><a href="documents/MongoDB M101J Certificate.pdf" target="_blank">M101J: MongoDB for Java Developers</a> course completion certification</p>
+                        <p><a href="documents/MongoDB M101J Certificate.pdf" target="_blank">M101J: MongoDB for Java
+                            Developers</a> course completion certification</p>
                     </div>
                 </div>
             </div>
@@ -328,14 +468,15 @@
                 <div class="skills">
                     <div class="skills-wrap">
                         <h3>jQuery</h3>
-                        <p>Honor code certificate from Microsoft for completion of <a href="documents/Microsoft Certificate-jQuery-edX.pdf" target="_blank">DEV208x: Introduction to jQuery</a></p>
+                        <p>Honor code certificate from Microsoft for completion of <a
+                                href="documents/Microsoft Certificate-jQuery-edX.pdf" target="_blank">DEV208x:
+                            Introduction to jQuery</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section><!-- Certifications -->
-
 
 
 <!-- Additional Info -->
