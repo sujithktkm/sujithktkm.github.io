@@ -21,6 +21,7 @@
     <script src="http://listjs.com/no-cdn/list.pagination.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
     <script src="js/projects.js" type="application/javascript"></script>
+    <script src="js/getNumMonths.js" type="application/javascript"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -101,7 +102,8 @@
                 <hr class="small">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
+                        <div class="service-item" onmouseover="getMonthsCount('months', new Date(2015, 7, 24));"
+                             onmouseout="getDateFormat('months', new Date(2015, 7, 24));">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-cloud fa-stack-1x text-primary"></i>
@@ -109,12 +111,16 @@
                             <h4>
                                 <strong>Citrix Systems</strong>
                             </h4>
-                            <p>Software Engineer Intern <br> <h6>August, 2015 - Present</h6></p>
+                            <p>Software Engineer Intern <br>
+                            <h6 id="months">August, 2015 - Present</h6>
+                            </p>
                             <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
+                        <div class="service-item"
+                             onmouseover="getMonthsCount('months1', new Date(2015, 5, 8), new Date(2015, 7, 14));"
+                             onmouseout="getDateFormat('months1', new Date(2015, 5, 8), new Date(2015, 7, 14));">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-calendar-o fa-stack-1x text-primary"></i>
@@ -122,12 +128,16 @@
                             <h4>
                                 <strong>Clari</strong>
                             </h4>
-                            <p>Software Engineer Intern <br> <h6>May, 2015 - August, 2015</h6></p>
+                            <p>Software Engineer Intern <br>
+                            <h6 id="months1">June, 2015 - August, 2015</h6>
+                            </p>
                             <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
+                        <div class="service-item"
+                             onmouseover="getMonthsCount('months2', new Date(2013, 11, 15), new Date(2014, 4, 1));"
+                             onmouseout="getDateFormat('months2', new Date(2013, 11, 15), new Date(2014, 4, 1));">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-bank fa-stack-1x text-primary"></i>
@@ -135,12 +145,16 @@
                             <h4>
                                 <strong>S &amp; P Capital IQ</strong>
                             </h4>
-                            <p>Quality Analyst Intern <br> <h6>December, 2013 - May, 2014</h6></p>
+                            <p>Quality Analyst Intern <br>
+                            <h6 id="months2">December, 2013 - May, 2014</h6>
+                            </p>
                             <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="service-item">
+                        <div class="service-item"
+                             onmouseover="getMonthsCount('months3', new Date(2013, 8, 1), new Date(2014, 4, 1));"
+                             onmouseout="getDateFormat('months3', new Date(2013, 8, 1), new Date(2014, 4, 1));">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-group fa-stack-1x text-primary"></i>
@@ -148,7 +162,9 @@
                             <h4>
                                 <strong>MARCNS (startup)</strong>
                             </h4>
-                            <p>Head of Engineering and Product <br> <h6>September, 2013 - May, 2014</h6></p>
+                            <p>Head of Engineering and Product <br>
+                            <h6 id="months3">September, 2013 - May, 2014</h6>
+                            </p>
                             <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
