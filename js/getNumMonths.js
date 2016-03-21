@@ -9,14 +9,15 @@ function getMonthsCount(id, d1, d2) {
     //return months <= 0 ? 0 : months;
     //console.log(months);
     months = months <= 0 ? 0 : months;
-    var displayString = "(" + months + " months)";
-    document.getElementById(id).innerHTML = displayString;
+    var displayString = id === "experience" ? months + " months" : " | (" + months + " months)";
+    var div = document.getElementById(id);
+    div.innerHTML = div.innerHTML + displayString;
 }
 
 function getDateFormat(id, d1, d2) {
     d2 = d2 || "Present";
-    var monthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
+    var monthNames = ["Jan", "Feb", "March", "April", "May", "June",
+        "July", "Aug", "Sept", "Oct", "Nov", "Dec"
     ];
     var displayString = "";
 

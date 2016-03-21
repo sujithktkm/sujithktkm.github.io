@@ -10,4 +10,8 @@ function pagination() {
         plugins: [ ListPagination({}) ]
     });
 }
-window.onload = pagination;
+
+window.onload = function() {
+    pagination();
+    getMonthsCount('experience', new Date(2014, 10, 15));
+};
