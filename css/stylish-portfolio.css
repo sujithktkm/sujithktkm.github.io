@@ -288,6 +288,10 @@ hr.small {
     white-space: normal;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 /* Map */
 
 .map {
