@@ -282,6 +282,12 @@ hr.small {
     margin: 10px;
 }
 
+/* Dropdown */
+
+.dropdown-menu > li > a {
+    white-space: normal;
+}
+
 /* Map */
 
 .map {
