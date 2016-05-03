@@ -13,5 +13,5 @@ function pagination() {
 
 window.onload = function() {
     pagination();
-    getMonthsCount('experience', new Date(2014, 10, 15));
+    getMonthsCount('experience', new Date(2014, 10, 15), new Date(2016, 03, 15));
 };
