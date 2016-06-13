@@ -304,6 +304,18 @@ hr.small {
     }
 }
 
+@media (min-width: 992px) {
+  .col-md-3 {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-10 {
+      width: 95%;
+  }
+}
+
 /* Footer */
 
 footer {
