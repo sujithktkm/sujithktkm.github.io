@@ -184,6 +184,10 @@ hr.small {
 
 .service-item {
     margin-bottom: 30px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
 }
 
 .education-item {
